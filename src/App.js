@@ -129,10 +129,12 @@ function App() {
   </Route>
 
   {/* Bare Layout Routes (NO Navbar & Sidebar) */}
-  <Route element={<BareLayout />}>
-    {/* <Route index path="authorize" element={<Authorize />} /> */}
-    <Route index  path="*" element={<NotFoundPage />} /> {/* Only for pages under BareLayout */}
-  </Route>
+  {/* <Route element={<BareLayout />}> */}
+     {/* <Route index path="authorize" element={<Authorize />} />  */}
+    {/* <Route index  path="*" element={<NotFoundPage />} /> Only for pages under BareLayout */}
+  {/* </Route> */}
+
+  
 </Routes>
 
   );
