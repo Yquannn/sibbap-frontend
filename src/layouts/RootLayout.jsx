@@ -11,7 +11,6 @@ const RootLayout = () => {
   } else if (userType === "member") {
     return <MemberLayout />;
   } else {
-    // For unauthorized users, redirect to login (or render a bare layout if you wish)
     return <Navigate to="/" />;
   }
 };

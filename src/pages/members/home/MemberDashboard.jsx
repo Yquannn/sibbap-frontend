@@ -120,7 +120,7 @@ const Dashboard = () => {
         throw new Error("User email not found. Please log in again.");
       }
       const response = await axios.get(
-        `http://192.168.254.103:3001/api/member/email/${email}`
+        `https://21ff-180-191-185-164.ngrok-free.app/api/member/email/${email}`
       );
       if (response.data) {
         setMember(response.data);
@@ -180,7 +180,7 @@ const Dashboard = () => {
           <img
             src={
               member?.id_picture
-                ? `http://192.168.254.103:3001/uploads/${member.id_picture}`
+                ? `https://21ff-180-191-185-164.ngrok-free.app/uploads/${member.id_picture}`
                 : defaultPicture
             }
             alt="Profile"
