@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import TimedepositAmountModal from "../../childModal/TimedepositAmountModal";
 
 const MemberAndCoAccountForm = () => {
   // Retrieve selectedMember from React Router's state
   const location = useLocation();
+
+  const { memberId } = useParams()
   const { selectedMember } = location.state || {};
 
   // If data was fetched, set a flag so fields are read-only
